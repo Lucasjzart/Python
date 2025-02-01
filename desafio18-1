@@ -1,0 +1,26 @@
+import math
+
+def calcular_seno(angulo_graus):
+    return math.sin(math.radians(angulo_graus))
+
+def calcular_cosseno(angulo_graus):
+    return math.cos(math.radians(angulo_graus))
+
+def calcular_tangente(angulo_graus):
+    return math.tan(math.radians(angulo_graus))
+
+def exibir_resultados(angulo_graus):
+    seno = calcular_seno(angulo_graus)
+    cosseno = calcular_cosseno(angulo_graus)
+    tangente = calcular_tangente(angulo_graus)
+
+    print(f"Seno: {seno:.2f}")
+    print(f"Cosseno: {cosseno:.2f}")
+    print(f"Tangente: {tangente:.2f}")
+
+def main():
+    angulo_graus = float(input("Digite um ângulo em graus: "))
+    exibir_resultados(angulo_graus)
+
+if __name__ == "__main__":
+    main()
